@@ -184,23 +184,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Mariage Leo Ludo",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Jun 20, 2020 13:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('Jun 20, 2020 13:00'),
 
             // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+            address: 'Vieux Moulin 77440 Ocquerre',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues contact Mr. Amit Roy at +91 9435021804 or +91 7086018971."
+            description: "Mariage Leo Ludo"
         }
     });
 
@@ -237,29 +237,29 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var itc_kol = {lat: 22.5932759, lng: 88.27027720000001};
+    var vm_loc = {lat: 49.026480, lng: 3.037920};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
-        center: itc_kol,
+        center: vm_loc,
         scrollwheel: false
     });
 
     var marker = new google.maps.Marker({
-        position: itc_kol,
+        position: vm_loc,
         map: map
     });
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var vm_loc = {lat: 49.026480, lng: 3.037920};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
-        center: la_fiesta,
+        center: vm_loc,
         scrollwheel: false
     });
 
     var marker = new google.maps.Marker({
-        position: la_fiesta,
+        position: vm_loc,
         map: map
     });
 }
